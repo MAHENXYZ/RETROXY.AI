@@ -1,0 +1,95 @@
+.hero-new {
+  position: relative;
+  min-height: 90vh;
+  background-image: url('https://images.unsplash.com/photo-1603643593271-76893a6499c6'); /* aesthetic retro bg */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.hero-new .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-new .hero-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  max-width: 600px;
+  width: 100%;
+}
+
+.hero-new h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-new p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-new input[type="file"] {
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.hero-new button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-new button:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+.hero-new img#preview {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto 0;
+  border: 4px solid #fff;
+  border-radius: 10px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* header putih */
+  padding: 0.5rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+nav a, .actions a {
+  text-decoration: none;
+  color: #f9b233; /* kuning sesuai logo */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, .actions a:hover {
+  color: #ffcc4d; /* kuning lebih terang saat hover */
+}
+body {
+  background: linear-gradient(to right, #fffef8, #fffdf5); /* background terang */
+  color: #333;
+}

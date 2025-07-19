@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Masuk - Retrofy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #fffef2, #fff9c4);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .login-container {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.08);
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      animation: slideUp 1s ease;
+    }
+
+    .login-container img {
+      width: 200px;
+      margin-bottom: 20px;
+      animation: popIn 1s ease;
+    }
+
+    .login-container h2 {
+      color: #ffc107;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #ffe57f;
+      border-radius: 10px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .login-container input:focus {
+      border-color: #ffc107;
+      background: #fffde7;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background: #ffc107;
+      border: none;
+      border-radius: 10px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+
+    .login-container button:hover {
+      background: #ffca28;
+    }
+
+    .login-container .forgot {
+      margin-top: 10px;
+      display: block;
+      color: #999;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .login-container .forgot:hover {
+      color: #ffc107;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; } 
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.8); opacity: 0; } 
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <!-- Logo -->
+    <img src="RETROFY.png" alt="Logo Retrofy" />
+
+    <!-- Judul -->
+    <h2>Masuk ke Retrofy</h2>
+
+    <!-- Form Login -->
+    <form action="#" method="post">
+      <input type="text" name="phone" placeholder="Nomor HP" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Kata Sandi" required />
+      <button type="submit">Masuk</button>
+    </form>
+
+    <!-- Lupa Password -->
+    <a href="#" class="forgot">Lupa kata sandi?</a>
+  </div>
+</body>
+</html>

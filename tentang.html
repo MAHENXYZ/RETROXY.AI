@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang - Retrofy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #fffde7, #ffffff);
+      color: #333;
+      animation: fadeIn 1.2s ease;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: #ffc107;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffc107;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #ffca28;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 1.1rem;
+      color: #555;
+      animation: fadeIn 2s ease;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 40px;
+      animation: slideUp 1.2s ease;
+    }
+
+    .content img {
+      width: 360px;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .text {
+      max-width: 480px;
+      text-align: left;
+    }
+
+    .text h2 {
+      color: #fbc02d;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .text p {
+      line-height: 1.6;
+      color: #444;
+    }
+
+    footer {
+      background: #fff9c4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; } 
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; } 
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+
+      .content img {
+        width: 90%;
+      }
+
+      .text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Retrofy</div>
+    <nav>
+      <a href="#">Tentang</a>
+      <a href="#">Fitur</a>
+      <a href="#">Kontak</a>
+      <a href="login.html">Masuk</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Tentang Retrofy</h1>
+    <p>Retrofy adalah alat berbasis AI yang dirancang untuk menghidupkan kembali momen lawas Anda dalam gaya vintage yang otentik dan modern. Kami memadukan teknologi dengan nostalgia, untuk memberikan pengalaman yang tak terlupakan dalam mengedit foto retro.</p>
+  </section>
+
+  <!-- Content Section -->
+  <section class="content">
+    <img src="mobil.jpg" alt="Foto Retro 1">
+    <div class="text">
+      <h2>Sentuhan Nostalgia</h2>
+      <p>Kami percaya bahwa setiap foto memiliki cerita. Dengan Retrofy, kami memberikan sentuhan warna klasik, efek film, dan suasana retro pada foto Anda — seolah waktu berjalan mundur dengan cara yang keren.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <img src="mobill.jpg" alt="Foto Retro 2">
+    <div class="text">
+      <h2>Ditenagai Kecerdasan Buatan</h2>
+      <p>Teknologi AI kami memahami pola dan nuansa foto vintage dari masa lalu. Dengan satu klik, foto biasa Anda bisa berubah menjadi karya seni bergaya retro berkualitas tinggi.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Retrofy. Semua hak dilindungi.
+  </footer>
+
+</body>
+</html>

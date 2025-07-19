@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retrofy - AI Foto Retro</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body {
+      background: linear-gradient(to right, #fffbe0, #fff);
+      color: #111;
+      animation: fadeInBody 1s ease-in-out;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 0.5rem 2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      animation: slideDown 1s ease-in-out;
+    }
+    .logo img { height: 100px; }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+    nav a, .actions a {
+      text-decoration: none;
+      color: #eab308;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover, .actions a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      background: url('bg.jpg') center/cover no-repeat;
+      position: relative;
+      animation: fadeIn 2s ease;
+    }
+    .hero-text {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+      animation: slideUp 1.5s ease;
+    }
+    .hero-text h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero-text p { font-size: 1.2rem; margin-bottom: 1.5rem; }
+
+    button {
+      padding: 0.7rem 2rem;
+      font-weight: bold;
+      border: 2px solid #fff;
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    section {
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* ANIMASI */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="RETROFY.png" alt="RETROFY Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#fitur">Fitur</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <a href="masuk.html">Masuk</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Ubah Foto Modernmu Jadi Retro Klasik</h1>
+      <p>Dengan kekuatan AI, kami bangkitkan nuansa masa lalu ke dalam foto Anda.</p>
+      <button onclick="document.getElementById('fitur').scrollIntoView({behavior: 'smooth'})">Jelajahi Fitur</button>
+    </div>
+  </section>
+
+  <!-- Fitur -->
+  <section id="fitur" style="padding: 4rem 2rem; background: linear-gradient(to bottom, #fdf6e3, #ffffff);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+      
+      <!-- Fitur 1 -->
+      <div style="background: #fff; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s;">
+        <a href="https://openai.com/index/chatgpt/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2202/2202112.png" alt="AI Filter" style="width: 64px; margin-bottom: 1rem;" /></a>
+        <h3 style="font-size: 1.3rem; font-weight: bold; color: #333;">AI Retro Filter</h3>
+        <p style="font-size: 1rem; color: #555; margin-top: 0.5rem;">
+          Algoritma AI kami secara otomatis mengubah foto biasa menjadi hasil artistik dengan filter vintage klasik seperti tahun 70-an hingga 90-an. Tidak perlu keahlian desain!
+        </p>
+      </div>
+
+      <!-- Fitur 2 -->
+      <div style="background: #fff; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s;">
+         <a href="ai-retro-filter.html" style="text-decoration: none; color: inherit;"></a>
+        <img src="https://cdn-icons-png.flaticon.com/512/706/706797.png" alt="Instant Preview" style="width: 64px; margin-bottom: 1rem;" />
+        <h3 style="font-size: 1.3rem; font-weight: bold; color: #333;">Pratinjau Langsung</h3>
+        <p style="font-size: 1rem; color: #555; margin-top: 0.5rem;">
+          Lihat hasil edit vintage secara real-time sebelum menyimpannya. Cukup unggah gambar, klik edit, dan hasil langsung muncul di layar Anda.
+        </p>
+      </div>
+
+      <!-- Fitur 3 -->
+      <div style="background: #fff; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s;">
+         <a href="ai-retro-filter.html" style="text-decoration: none; color: inherit;"></a>
+        <img src="https://cdn-icons-png.flaticon.com/512/1161/1161828.png" alt="Device Friendly" style="width: 64px; margin-bottom: 1rem;" />
+        <h3 style="font-size: 1.3rem; font-weight: bold; color: #333;">Responsif di Semua Perangkat</h3>
+        <p style="font-size: 1rem; color: #555; margin-top: 0.5rem;">
+          Aplikasi web kami dirancang agar bisa digunakan di smartphone, tablet, maupun laptop dengan tampilan optimal dan interaksi nyaman.
+        </p>
+      </div>
+
+      <!-- Fitur 4 -->
+      <div style="background: #fff; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s;">
+         <a href="ai-retro-filter.html" style="text-decoration: none; color: inherit;"></a>
+        <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="No Login" style="width: 64px; margin-bottom: 1rem;" />
+        <h3 style="font-size: 1.3rem; font-weight: bold; color: #333;">Tanpa Login</h3>
+        <p style="font-size: 1rem; color: #555; margin-top: 0.5rem;">
+          Gunakan Retrofy secara instan tanpa perlu membuat akun. Privasi Anda tetap aman dan tidak perlu berbagi data pribadi.
+        </p>
+      </div>
+
+      <!-- Fitur 5 -->
+      <div style="background: #fff; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s;">
+         <a href="ai-retro-filter.html" style="text-decoration: none; color: inherit;"></a>
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Fast" style="width: 64px; margin-bottom: 1rem;" />
+        <h3 style="font-size: 1.3rem; font-weight: bold; color: #333;">Proses Cepat Sekali Klik</h3>
+        <p style="font-size: 1rem; color: #555; margin-top: 0.5rem;">
+          Semua proses dilakukan otomatis dengan kecepatan tinggi di cloud AI. Tidak perlu menunggu lama, hasil langsung tersedia!
+        </p>
+      </div>
+
+      <!-- Fitur 6 -->
+      <div style="background: #fff; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s;">
+         <a href="ai-retro-filter.html" style="text-decoration: none; color: inherit;"></a>
+        <img src="https://cdn-icons-png.flaticon.com/512/1686/1686744.png" alt="Download" style="width: 64px; margin-bottom: 1rem;" />
+        <h3 style="font-size: 1.3rem; font-weight: bold; color: #333;">Download Gambar HD</h3>
+        <p style="font-size: 1rem; color: #555; margin-top: 0.5rem;">
+          Setelah selesai mengedit, Anda dapat langsung mengunduh hasil akhir dalam kualitas tinggi tanpa watermark.
+        </p>
+      </div>
+
+          </p>
+        </div>
+        <!-- Tambahan fitur lainnya tetap sama -->
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
